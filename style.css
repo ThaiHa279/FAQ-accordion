@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Work Sans;
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light--pink: hsl(275, 100%, 97%);
+    --Grayish--purple: hsl(292, 16%, 49%);
+    --Dark--purple: hsl(292, 42%, 14%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Work Sans;
+    font-size: 16px;
+    line-height: 1.5;    
+    background: url(./assets/images/background-pattern-desktop.svg) no-repeat;
+    background-color: var(--Light--pink);
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.faq-accordion{ 
+    display: block;
+    padding: 40px 15px;
+    margin: auto;
+    color: hsl(292, 42%, 14%);
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0px 30px 100px -50px black;
+}
+
+.faq-heading{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.faq-content{
+    margin-bottom: 10px;
+}
+
+.fag-dropdown{
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-dropdown_header{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 0; 
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
